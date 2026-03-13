@@ -56,7 +56,7 @@
         }
         .preview-area {
             max-width: 860px;
-            margin: 0 auto 40px;
+            margin: 0 auto 10px;
             display: flex;
             gap: 20px;
         }
@@ -82,6 +82,36 @@
             display: block;
         }
         .side-by-side .mockup-panel { display: block; }
+        .next-steps {
+            max-width: 860px;
+            margin: 24px auto 40px;
+            padding: 20px 30px;
+            background: #fff;
+            border-left: 5px solid #FFD700;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+        .next-steps h2 { margin-bottom: 12px; color: #007A33; }
+        .next-steps ol { padding-left: 20px; line-height: 1.9; }
+        .next-steps li { margin-bottom: 8px; }
+        .next-steps code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.92em;
+            font-family: monospace;
+        }
+        .next-steps pre {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 12px 16px;
+            border-radius: 5px;
+            margin: 8px 0 4px;
+            overflow-x: auto;
+            font-size: 0.9em;
+            line-height: 1.6;
+            font-family: monospace;
+        }
     </style>
 </head>
 <body>
@@ -95,7 +125,7 @@
             <li>Click <strong>PaperMod Theme</strong> or <strong>Academic Theme</strong> below to preview each theme individually.</li>
             <li>Click <strong>Side-by-Side</strong> to compare both themes at the same time.</li>
             <li>Review how each theme presents the site's content—header, navigation, team profiles, and publications.</li>
-            <li>When you have decided on a theme, note its name and update <code>config.toml</code> with the corresponding theme setting.</li>
+            <li>When you have decided, follow the <strong>Next Steps</strong> section below to apply the theme.</li>
         </ol>
     </div>
 
@@ -114,6 +144,49 @@
             <h2>Academic Theme Mockup</h2>
             <iframe src="academic-mockup.html" title="Academic Theme Mockup"></iframe>
         </div>
+    </div>
+
+    <div class="next-steps">
+        <h2>Now What? – Next Steps After Choosing a Theme</h2>
+        <ol>
+            <li>
+                <strong>Set the theme in <code>config.toml</code></strong> — open <code>config.toml</code> at the root of
+                the repository and set the <code>theme</code> field to your chosen theme name:
+                <pre># For PaperMod:
+theme = "PaperMod"
+
+# For the Academic / Wowchemy theme:
+theme = "academic"</pre>
+            </li>
+            <li>
+                <strong>Install the theme as a Git submodule</strong> — run one of the following commands from the
+                repository root in your terminal:
+                <pre># PaperMod
+git submodule add https://github.com/adityatelange/hugo-PaperMod themes/PaperMod
+
+# Academic / Wowchemy
+git submodule add https://github.com/wowchemy/starter-hugo-academic themes/academic</pre>
+            </li>
+            <li>
+                <strong>Preview the real site locally</strong> — with <a href="https://gohugo.io/installation/" target="_blank" rel="noopener">Hugo installed</a>,
+                run <code>hugo server -D</code> in the repository root and open
+                <code>http://localhost:1313</code> in your browser.
+            </li>
+            <li>
+                <strong>Commit and push your changes</strong> — once you are happy with the look, commit
+                <code>config.toml</code> and the new <code>themes/</code> submodule and push to GitHub:
+                <pre>git add config.toml .gitmodules themes/
+git commit -m "Apply chosen Hugo theme"
+git push</pre>
+            </li>
+            <li>
+                <strong>Enable GitHub Pages</strong> — in your repository settings, go to
+                <em>Pages → Source</em> and select the branch and folder that Hugo publishes to
+                (typically <code>gh-pages</code> or <code>/docs</code> depending on your workflow).
+                Your site will then be live at
+                <code>https://theblackstonecenter.github.io/</code>.
+            </li>
+        </ol>
     </div>
 
     <script>
