@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      # Keep this PR branch in the trigger so the gh-pages branch is created
+      # immediately when this PR is pushed — before it is merged to main.
+      # Remove this line after the PR is merged.
+      - copilot/preview-themes-for-mockup
+  workflow_dispatch:
+
+# Write permission is needed to push the built site to the gh-pages branch
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to gh-pages branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          # Target branch that GitHub Pages serves from
+          branch: gh-pages
+          # Deploy everything in the repo root (index.html, 404.html, mockups/, etc.)
+          folder: .
+          # Remove stale files from gh-pages that no longer exist in source
+          clean: true
