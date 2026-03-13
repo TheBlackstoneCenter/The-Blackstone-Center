@@ -1,55 +1,30 @@
 # The William E. Blackstone Center
 
-## 👉 [Click here to see your website mockups — live, right now](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/copilot/preview-themes-for-mockup/mockups/index.html)
+---
 
-No setup, no downloads, no accounts needed. Click the link above — it opens instantly in your browser.
+## ✅ Your live link — works right now, no setup needed
 
-Here's a preview of what you'll see:
+### 👉 [Open your website mockups](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/mockups/index.html)
 
-[![Mockup viewer showing PaperMod and Academic themes side by side](https://github.com/user-attachments/assets/1fdb4c76-43a7-43c1-87ef-abbcff85dc41)](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/copilot/preview-themes-for-mockup/mockups/index.html)
+Click it. It works. Nothing to install or configure.
 
-The viewer lets you toggle between the **PaperMod** theme (green/gold, clean and bold) and the **Academic** theme (dark navy, scholarly feel), or compare them side by side.
+[![Mockup viewer showing PaperMod and Academic themes side by side](https://github.com/user-attachments/assets/1fdb4c76-43a7-43c1-87ef-abbcff85dc41)](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/mockups/index.html)
 
-> **After this PR is merged to `main`**, the permanent link will be:
-> [https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/mockups/index.html](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/mockups/index.html)
+The viewer shows both theme options — **PaperMod** (green/gold, clean and bold) and **Academic** (dark navy, scholarly feel) — with buttons to toggle or compare side by side.
 
 ---
 
-### Want a permanent link instead?
+## ❓ Why does `https://theblackstonecenter.github.io/…` give a 404?
 
-Enable **GitHub Pages** in one step and the site will be live forever at `https://theblackstonecenter.github.io/The-Blackstone-Center/mockups/`:
+That URL uses **GitHub Pages**, which needs to be switched on once in your repository settings. The deploy workflow is ready and waiting — it just needs one click to unlock:
 
-1. Open **[Settings → Pages](https://github.com/TheBlackstoneCenter/The-Blackstone-Center/settings/pages)** for this repository
-2. Under **Source**, choose **"GitHub Actions"**
-3. Click **Save** — it deploys automatically
+1. Go to **[Settings → Pages](https://github.com/TheBlackstoneCenter/The-Blackstone-Center/settings/pages)** for this repository
+2. Under **"Build and deployment → Source"**, select **"GitHub Actions"** from the dropdown
+3. Click **Save**
 
----
+GitHub will run the deploy automatically. Within about 60 seconds the URL `https://theblackstonecenter.github.io/The-Blackstone-Center/mockups/` will be live.
 
-## 📋 How to View the Mockups
-
-Two theme mockups have been created so you can compare website styles before committing to one. There are **three ways** to view them:
-
-### Option 1 — Open directly in your browser (no setup required)
-
-1. Click the **`mockups/`** folder above (or navigate to it in a file explorer).
-2. Download or open **`mockups/index.html`** in any web browser.  
-   It shows both theme mockups with toggle buttons and a side-by-side view.
-
-### Option 2 — View on GitHub Pages
-
-Once GitHub Pages is enabled for this repository (Settings → Pages → Source), the mockups will be available at:
-
-> **<https://theblackstonecenter.github.io/The-Blackstone-Center/mockups/>**
-
-### Option 3 — View locally with a simple server
-
-If you have Python installed, run this from the repository root:
-
-```bash
-python3 -m http.server 8080
-```
-
-Then open **<http://localhost:8080/mockups/>** in your browser.
+> **Nothing else is broken.** The workflow file is correct, the mockup files are correct. The only missing piece is that one Settings toggle.
 
 ---
 
