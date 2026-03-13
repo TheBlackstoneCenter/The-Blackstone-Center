@@ -2,17 +2,27 @@
 
 ---
 
-## 🚨 Getting a 404? Fix it in one click
+## 🚨 Site says "live" but still getting a 404?
 
-> **The site files are all correct and deployed — GitHub Pages just needs to be switched ON once.**
+The live URL is `https://theblackstonecenter.github.io/The-Blackstone-Center/`
 
-1. Open **[Settings → Pages](https://github.com/TheBlackstoneCenter/The-Blackstone-Center/settings/pages)** in this repository *(you must be signed in as the owner)*
-2. Under **"Build and deployment → Source"** choose **`GitHub Actions`** from the dropdown
-3. Click **Save**
+This happens because GitHub Pages is currently serving the **`main` branch**, which has no homepage yet. The homepage (`index.html`) is in this repository — you just need to point Pages at the right branch.
 
-The deploy workflow will run automatically. Within ~60 seconds `https://theblackstonecenter.github.io/The-Blackstone-Center/` will be live.
+### Two-step fix
 
-> Already done that and still seeing 404? Use the preview link below — it works right now with zero setup.
+**Step 1 — merge (or wait for) this pull request.** That adds the `index.html` homepage to `main` and creates a `gh-pages` branch with all the site files built and ready.
+
+**Step 2 — point Pages at the `gh-pages` branch:**
+
+1. Go to **[Settings → Pages](https://github.com/TheBlackstoneCenter/The-Blackstone-Center/settings/pages)**
+2. Under **Build and deployment → Source** → keep **"Deploy from a branch"**
+3. Change the branch dropdown from **`main`** to **`gh-pages`**
+4. Folder stays **`/ (root)`**
+5. Click **Save**
+
+Within ~60 seconds `https://theblackstonecenter.github.io/The-Blackstone-Center/` will show the full site.
+
+> **Why `gh-pages` and not `main`?** The deploy workflow in this repo automatically pushes the finished site files to the `gh-pages` branch whenever you push to `main`. That way `main` stays clean (source code) and `gh-pages` always has the latest built site.
 
 ---
 

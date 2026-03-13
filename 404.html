@@ -174,8 +174,8 @@
 <body>
 
     <nav>
-        <a class="nav-brand" href="/">The Blackstone Center</a>
-        <a class="nav-home" href="/">← Back to Home</a>
+        <a class="nav-brand" href="/The-Blackstone-Center/">The Blackstone Center</a>
+        <a class="nav-home" href="/The-Blackstone-Center/">← Back to Home</a>
     </nav>
 
     <main>
@@ -198,11 +198,11 @@
                    href="https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/index.html">
                     Open Working Site Preview
                 </a>
-                <a class="btn btn-secondary" href="/">← Homepage</a>
+                <a class="btn btn-secondary" href="/The-Blackstone-Center/">← Homepage</a>
             </div>
 
             <div class="setup-box">
-                <h2>🔧 Fix this permanently — one step in GitHub Settings</h2>
+                <h2>🔧 Fix this permanently — change the Pages branch in Settings</h2>
                 <ol>
                     <li>
                         Go to
@@ -214,13 +214,16 @@
                     </li>
                     <li>
                         Under <strong>Build and deployment → Source</strong>,
-                        choose <code>GitHub Actions</code>
+                        keep <strong>"Deploy from a branch"</strong>
                     </li>
-                    <li>Click <strong>Save</strong></li>
+                    <li>
+                        Change the branch dropdown from <code>main</code> to <code>gh-pages</code>
+                    </li>
+                    <li>Leave folder as <code>/ (root)</code> and click <strong>Save</strong></li>
                 </ol>
                 <p style="margin-top:12px;font-size:.85em;color:var(--muted);">
-                    GitHub will deploy the site automatically. Within ~60 seconds the
-                    <code>theblackstonecenter.github.io/The-Blackstone-Center/</code> URL will be live.
+                    GitHub will redeploy automatically. Within ~60 seconds
+                    <code>theblackstonecenter.github.io/The-Blackstone-Center/</code> will be live.
                 </p>
             </div>
         </div>
