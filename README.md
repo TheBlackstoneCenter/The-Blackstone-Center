@@ -2,29 +2,27 @@
 
 ---
 
-## ✅ Your live link — works right now, no setup needed
+## 🚨 Getting a 404? Fix it in one click
 
-### 👉 [Open your website mockups](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/mockups/index.html)
+> **The site files are all correct and deployed — GitHub Pages just needs to be switched ON once.**
 
-Click it. It works. Nothing to install or configure.
+1. Open **[Settings → Pages](https://github.com/TheBlackstoneCenter/The-Blackstone-Center/settings/pages)** in this repository *(you must be signed in as the owner)*
+2. Under **"Build and deployment → Source"** choose **`GitHub Actions`** from the dropdown
+3. Click **Save**
 
-[![Mockup viewer showing PaperMod and Academic themes side by side](https://github.com/user-attachments/assets/1fdb4c76-43a7-43c1-87ef-abbcff85dc41)](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/mockups/index.html)
+The deploy workflow will run automatically. Within ~60 seconds `https://theblackstonecenter.github.io/The-Blackstone-Center/` will be live.
 
-The viewer shows both theme options — **PaperMod** (green/gold, clean and bold) and **Academic** (dark navy, scholarly feel — ✅ **chosen**) — with buttons to toggle or compare side by side.
+> Already done that and still seeing 404? Use the preview link below — it works right now with zero setup.
 
 ---
 
-## ❓ Why does `https://theblackstonecenter.github.io/…` give a 404?
+## 👉 Works right now — no setup needed
 
-That URL uses **GitHub Pages**, which needs to be switched on once in your repository settings. The deploy workflow is ready and waiting — it just needs one click to unlock:
+### [Open the live site preview](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/index.html)
 
-1. Go to **[Settings → Pages](https://github.com/TheBlackstoneCenter/The-Blackstone-Center/settings/pages)** for this repository
-2. Under **"Build and deployment → Source"**, select **"GitHub Actions"** from the dropdown
-3. Click **Save**
+Click it. It works.
 
-GitHub will run the deploy automatically. Within about 60 seconds the URL `https://theblackstonecenter.github.io/The-Blackstone-Center/mockups/` will be live.
-
-> **Nothing else is broken.** The workflow file is correct, the mockup files are correct. The only missing piece is that one Settings toggle.
+[![Academic theme homepage — dark scholarly design with green/gold header](https://github.com/user-attachments/assets/1fdb4c76-43a7-43c1-87ef-abbcff85dc41)](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/index.html)
 
 ---
 
@@ -89,12 +87,17 @@ Push to the `main` branch. GitHub Pages will build and publish the site automati
 
 ```
 The-Blackstone-Center/
-├── config.toml          # Hugo site configuration (set your theme here)
+├── index.html           # Homepage (Academic theme, served by GitHub Pages)
+├── 404.html             # Custom 404 page (auto-redirects to preview while Pages is being set up)
+├── config.toml          # Hugo site configuration (theme = "academic")
 ├── content/             # Site content in Markdown
 │   └── _index.md        # Home page content
+├── layouts/             # Hugo template overrides
+│   └── partials/        # header.html, footer.html
 ├── mockups/             # Static HTML theme mockups for preview
-│   ├── index.html       # Interactive mockup viewer ← start here
+│   ├── index.html       # Interactive mockup viewer
 │   ├── papermod-mockup.html
 │   └── academic-mockup.html
-└── themes/              # Hugo theme(s) (added as Git submodules)
+└── .github/workflows/
+    └── pages.yml        # Auto-deploy to GitHub Pages on push to main
 ```
