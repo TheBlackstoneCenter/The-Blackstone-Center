@@ -1,0 +1,10 @@
+baseURL = "https://theblackstonecenter.github.io/"
+title = "The Blackstone Center"
+author = "The William E. Blackstone Center"
+description = "A center dedicated to exploring the human experience through literature and community engagement."
+
+# Chosen theme: Academic (dark navy, scholarly style — selected after previewing mockups)
+# Options:
+#   theme = "PaperMod"  (clean, minimal blog/portfolio style)
+#   theme = "academic"  (feature-rich academic/research style)
+theme = "academic"
