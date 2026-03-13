@@ -131,7 +131,7 @@
 
     <div class="theme-nav">
         <button class="theme-btn" data-theme="papermod" onclick="showTheme('papermod', this)">PaperMod Theme</button>
-        <button class="theme-btn" data-theme="academic" onclick="showTheme('academic', this)">Academic Theme</button>
+        <button class="theme-btn" data-theme="academic" onclick="showTheme('academic', this)">✅ Academic Theme — <em>Chosen</em></button>
         <button class="theme-btn" data-theme="both" onclick="showTheme('both', this)">Side-by-Side</button>
     </div>
 
@@ -147,44 +147,31 @@
     </div>
 
     <div class="next-steps">
-        <h2>Now What? – Next Steps After Choosing a Theme</h2>
+        <h2>✅ Academic Theme Applied — What's Next</h2>
+        <p style="margin-bottom:16px;">The Academic theme has been set in <code>config.toml</code> and the site homepage (<code>index.html</code>) now uses the Academic design. The remaining steps to get the full Hugo-powered site running are below.</p>
         <ol>
             <li>
-                <strong>Set the theme in <code>config.toml</code></strong> — open <code>config.toml</code> at the root of
-                the repository and set the <code>theme</code> field to your chosen theme name:
-                <pre># For PaperMod:
-theme = "PaperMod"
-
-# For the Academic / Wowchemy theme:
-theme = "academic"</pre>
+                <strong>Enable GitHub Pages</strong> — in your repository settings, go to
+                <em>Settings → Pages → Build and deployment → Source</em> and select
+                <strong>GitHub Actions</strong>, then click Save. Your site will be live at
+                <code>https://theblackstonecenter.github.io/The-Blackstone-Center/</code> within ~60 seconds.
             </li>
             <li>
-                <strong>Install the theme as a Git submodule</strong> — run one of the following commands from the
-                repository root in your terminal:
-                <pre># PaperMod
-git submodule add https://github.com/adityatelange/hugo-PaperMod themes/PaperMod
-
-# Academic / Wowchemy
+                <strong>Install the Academic Hugo theme (optional — for the full Hugo build)</strong> — run this
+                from the repository root in your terminal:
+                <pre># Academic / Wowchemy
 git submodule add https://github.com/wowchemy/starter-hugo-academic themes/academic</pre>
             </li>
             <li>
-                <strong>Preview the real site locally</strong> — with <a href="https://gohugo.io/installation/" target="_blank" rel="noopener">Hugo installed</a>,
+                <strong>Preview the full Hugo site locally</strong> — with <a href="https://gohugo.io/installation/" target="_blank" rel="noopener">Hugo installed</a>,
                 run <code>hugo server -D</code> in the repository root and open
                 <code>http://localhost:1313</code> in your browser.
             </li>
             <li>
-                <strong>Commit and push your changes</strong> — once you are happy with the look, commit
-                <code>config.toml</code> and the new <code>themes/</code> submodule and push to GitHub:
-                <pre>git add config.toml .gitmodules themes/
-git commit -m "Apply chosen Hugo theme"
+                <strong>Commit and push any content changes</strong> — after editing content files, push to GitHub:
+                <pre>git add .
+git commit -m "Update site content"
 git push</pre>
-            </li>
-            <li>
-                <strong>Enable GitHub Pages</strong> — in your repository settings, go to
-                <em>Pages → Source</em> and select the branch and folder that Hugo publishes to
-                (typically <code>gh-pages</code> or <code>/docs</code> depending on your workflow).
-                Your site will then be live at
-                <code>https://theblackstonecenter.github.io/The-Blackstone-Center/</code>.
             </li>
         </ol>
     </div>
@@ -236,9 +223,9 @@ git push</pre>
             }
         }
 
-        // Show side-by-side by default
-        const defaultBtn = document.querySelector('.theme-btn[data-theme="both"]');
-        showTheme('both', defaultBtn);
+        // Show Academic theme by default (chosen theme)
+        const defaultBtn = document.querySelector('.theme-btn[data-theme="academic"]');
+        showTheme('academic', defaultBtn);
     </script>
 </body>
 </html>

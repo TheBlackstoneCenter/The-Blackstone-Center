@@ -10,7 +10,7 @@ Click it. It works. Nothing to install or configure.
 
 [![Mockup viewer showing PaperMod and Academic themes side by side](https://github.com/user-attachments/assets/1fdb4c76-43a7-43c1-87ef-abbcff85dc41)](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/mockups/index.html)
 
-The viewer shows both theme options — **PaperMod** (green/gold, clean and bold) and **Academic** (dark navy, scholarly feel) — with buttons to toggle or compare side by side.
+The viewer shows both theme options — **PaperMod** (green/gold, clean and bold) and **Academic** (dark navy, scholarly feel — ✅ **chosen**) — with buttons to toggle or compare side by side.
 
 ---
 
@@ -28,20 +28,22 @@ GitHub will run the deploy automatically. Within about 60 seconds the URL `https
 
 ---
 
-## 🎨 Choosing a Theme
+## 🎨 Theme: Academic ✅
 
-| Theme | Style | Good for |
-|-------|-------|----------|
-| **PaperMod** | Clean, minimal, fast | Blog / portfolio |
-| **Academic** | Feature-rich, structured | Research / academia |
+The **Academic** theme has been selected and applied. The site homepage (`index.html`) uses the dark scholarly design — dark navy background, green/gold header, team profiles, and publications layout.
 
-After choosing, open `config.toml` and set the `theme` field:
+| Theme | Style | Status |
+|-------|-------|--------|
+| PaperMod | Clean, minimal, fast | Not selected |
+| **Academic** | **Feature-rich, structured** | ✅ **Chosen** |
 
-```toml
-theme = "PaperMod"   # or "academic"
+To complete the full Hugo-powered build, install the Academic theme as a submodule:
+
+```bash
+git submodule add https://github.com/wowchemy/starter-hugo-academic themes/academic
 ```
 
-Then see the **Next Steps** section inside `mockups/index.html` for the full setup guide.
+Then run `hugo server -D` locally to preview, and push to deploy via GitHub Pages.
 
 ---
 
