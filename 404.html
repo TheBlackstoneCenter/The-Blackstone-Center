@@ -15,7 +15,7 @@
         Once GitHub Pages is enabled and the site is deployed, most visitors
         will never see this page — but it stays here as a helpful fallback.
     -->
-    <meta http-equiv="refresh" content="8; url=https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/index.html">
+    <meta http-equiv="refresh" content="8; url=https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/copilot/preview-themes-for-mockup/index.html">
 
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -183,9 +183,9 @@
             <div class="error-code">404</div>
             <h1>Page Not Found</h1>
             <p class="desc">
-                This URL doesn't point to a page yet — either GitHub Pages isn't live yet,
-                or the page you're looking for hasn't been built. The site is ready to go;
-                it just needs GitHub Pages enabled in the repository settings.
+                GitHub Pages is live and configured, but the homepage hasn't been added to
+                the <code>main</code> branch yet — it's waiting in a pull request. Once that
+                pull request is merged, this URL will show the full site automatically.
             </p>
 
             <div class="redirect-notice">
@@ -195,35 +195,30 @@
 
             <div class="btn-group">
                 <a class="btn btn-primary"
-                   href="https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/index.html">
+                   href="https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/copilot/preview-themes-for-mockup/index.html">
                     Open Working Site Preview
                 </a>
                 <a class="btn btn-secondary" href="/The-Blackstone-Center/">← Homepage</a>
             </div>
 
             <div class="setup-box">
-                <h2>🔧 Fix this permanently — change the Pages branch in Settings</h2>
+                <h2>🔧 Fix this permanently — merge the pull request</h2>
                 <ol>
                     <li>
-                        Go to
-                        <a href="https://github.com/TheBlackstoneCenter/The-Blackstone-Center/settings/pages"
+                        Go to the
+                        <a href="https://github.com/TheBlackstoneCenter/The-Blackstone-Center/pulls"
                            target="_blank" rel="noopener">
-                            Settings → Pages
+                            Pull Requests tab
                         </a>
-                        in this repository
+                        of this repository
                     </li>
-                    <li>
-                        Under <strong>Build and deployment → Source</strong>,
-                        keep <strong>"Deploy from a branch"</strong>
-                    </li>
-                    <li>
-                        Change the branch dropdown from <code>main</code> to <code>gh-pages</code>
-                    </li>
-                    <li>Leave folder as <code>/ (root)</code> and click <strong>Save</strong></li>
+                    <li>Open the pull request titled <strong>"Fix live 404…"</strong></li>
+                    <li>Click the green <strong>"Merge pull request"</strong> button, then <strong>"Confirm merge"</strong></li>
                 </ol>
                 <p style="margin-top:12px;font-size:.85em;color:var(--muted);">
-                    GitHub will redeploy automatically. Within ~60 seconds
-                    <code>theblackstonecenter.github.io/The-Blackstone-Center/</code> will be live.
+                    GitHub Pages will automatically re-deploy from the updated <code>main</code> branch.
+                    Within ~60 seconds <code>theblackstonecenter.github.io/The-Blackstone-Center/</code> will be live.
+                    No settings changes needed.
                 </p>
             </div>
         </div>

@@ -2,37 +2,30 @@
 
 ---
 
-## 🚨 Site says "live" but still getting a 404?
+## 🚨 Fix the 404 — one action required
 
-The live URL is `https://theblackstonecenter.github.io/The-Blackstone-Center/`
+**GitHub Pages is live and pointing at `main`, but `main` has no homepage yet.**
+The homepage (`index.html`) is in this pull request, waiting to be merged.
 
-This happens because GitHub Pages is currently serving the **`main` branch**, which has no homepage yet. The homepage (`index.html`) is in this repository — you just need to point Pages at the right branch.
+### ✅ One click fixes it: merge this PR
 
-### Two-step fix
+1. Open the **[Pull Requests tab](https://github.com/TheBlackstoneCenter/The-Blackstone-Center/pulls)** of this repository
+2. Click the open pull request titled **"Fix live 404…"**
+3. Click the green **"Merge pull request"** button → **"Confirm merge"**
 
-**Step 1 — merge (or wait for) this pull request.** That adds the `index.html` homepage to `main` and creates a `gh-pages` branch with all the site files built and ready.
+That's it. GitHub Pages will automatically re-deploy from the updated `main` branch within ~60 seconds, and `https://theblackstonecenter.github.io/The-Blackstone-Center/` will show the site.
 
-**Step 2 — point Pages at the `gh-pages` branch:**
-
-1. Go to **[Settings → Pages](https://github.com/TheBlackstoneCenter/The-Blackstone-Center/settings/pages)**
-2. Under **Build and deployment → Source** → keep **"Deploy from a branch"**
-3. Change the branch dropdown from **`main`** to **`gh-pages`**
-4. Folder stays **`/ (root)`**
-5. Click **Save**
-
-Within ~60 seconds `https://theblackstonecenter.github.io/The-Blackstone-Center/` will show the full site.
-
-> **Why `gh-pages` and not `main`?** The deploy workflow in this repo automatically pushes the finished site files to the `gh-pages` branch whenever you push to `main`. That way `main` stays clean (source code) and `gh-pages` always has the latest built site.
+> **No settings changes are needed.** Pages is already configured to serve from `main`. Merging adds the homepage to `main` and Pages picks it up automatically.
 
 ---
 
-## 👉 Works right now — no setup needed
+## 👉 Works right now — no merge needed
 
-### [Open the live site preview](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/index.html)
+### [Open the live site preview](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/copilot/preview-themes-for-mockup/index.html)
 
-Click it. It works.
+Click it. It works immediately.
 
-[![Academic theme homepage — dark scholarly design with green/gold header](https://github.com/user-attachments/assets/1fdb4c76-43a7-43c1-87ef-abbcff85dc41)](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/index.html)
+[![Academic theme homepage — dark scholarly design with green/gold header](https://github.com/user-attachments/assets/1fdb4c76-43a7-43c1-87ef-abbcff85dc41)](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/copilot/preview-themes-for-mockup/index.html)
 
 ---
 
