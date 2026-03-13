@@ -3,7 +3,9 @@
 Website source for **The Blackstone Center** — a center dedicated to exploring the human experience through literature and community engagement.
 
 This repository uses [Hugo](https://gohugo.io/) to build a static website hosted on GitHub Pages at  
-**<https://theblackstonecenter.github.io/>**
+**<https://theblackstonecenter.github.io/The-Blackstone-Center/>**
+
+🔴 **Live mockup viewer →** **<https://theblackstonecenter.github.io/The-Blackstone-Center/mockups/>**
 
 ---
 
@@ -21,7 +23,7 @@ Two theme mockups have been created so you can compare website styles before com
 
 Once GitHub Pages is enabled for this repository (Settings → Pages → Source), the mockups will be available at:
 
-> **<https://theblackstonecenter.github.io/mockups/>**
+> **<https://theblackstonecenter.github.io/The-Blackstone-Center/mockups/>**
 
 ### Option 3 — View locally with a simple server
 
