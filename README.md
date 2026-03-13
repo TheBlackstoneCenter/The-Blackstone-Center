@@ -2,10 +2,30 @@
 
 Website source for **The Blackstone Center** — a center dedicated to exploring the human experience through literature and community engagement.
 
-This repository uses [Hugo](https://gohugo.io/) to build a static website hosted on GitHub Pages at  
-**<https://theblackstonecenter.github.io/The-Blackstone-Center/>**
+---
 
-🔴 **Live mockup viewer →** **<https://theblackstonecenter.github.io/The-Blackstone-Center/mockups/>**
+## 👁️ View the Mockups Right Now
+
+### ⚡ Instant live preview (no setup needed)
+
+Click the link below — it works immediately, directly from GitHub:
+
+> **[Open Mockup Viewer — Live Preview](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/copilot/preview-themes-for-mockup/mockups/index.html)**
+>
+> `https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/copilot/preview-themes-for-mockup/mockups/index.html`
+
+This uses [htmlpreview.github.io](https://htmlpreview.github.io/), a free service that renders GitHub HTML files directly in your browser.
+
+### 🌐 Permanent GitHub Pages link (one-time setup)
+
+Once you enable GitHub Pages, the mockups will live permanently at:
+
+> **<https://theblackstonecenter.github.io/The-Blackstone-Center/mockups/>**
+
+**To activate it (one click):**
+1. Go to → **[Repository Settings → Pages](https://github.com/TheBlackstoneCenter/The-Blackstone-Center/settings/pages)**
+2. Under **Source**, select **"GitHub Actions"**
+3. Save — the [Deploy workflow](https://github.com/TheBlackstoneCenter/The-Blackstone-Center/actions/workflows/pages.yml) will run automatically and publish the site
 
 ---
 

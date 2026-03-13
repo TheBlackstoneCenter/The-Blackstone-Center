@@ -138,11 +138,11 @@
     <div class="preview-area" id="previewArea">
         <div class="mockup-panel" id="panel-papermod">
             <h2>PaperMod Theme Mockup</h2>
-            <iframe src="papermod-mockup.html" title="PaperMod Theme Mockup"></iframe>
+            <iframe id="iframe-papermod" src="papermod-mockup.html" title="PaperMod Theme Mockup"></iframe>
         </div>
         <div class="mockup-panel" id="panel-academic">
             <h2>Academic Theme Mockup</h2>
-            <iframe src="academic-mockup.html" title="Academic Theme Mockup"></iframe>
+            <iframe id="iframe-academic" src="academic-mockup.html" title="Academic Theme Mockup"></iframe>
         </div>
     </div>
 
@@ -190,10 +190,28 @@ git push</pre>
     </div>
 
     <script>
+        // Fix iframe sources when rendered via htmlpreview.github.io
+        // (relative paths don't resolve correctly in that environment)
+        (function () {
+            const loc = window.location.href;
+            if (loc.indexOf('htmlpreview.github.io') !== -1) {
+                const match = loc.match(/\?(.+\/mockups\/)/);
+                if (match) {
+                    const base = match[1];
+                    document.getElementById('iframe-papermod').src =
+                        'https://htmlpreview.github.io/?' + base + 'papermod-mockup.html';
+                    document.getElementById('iframe-academic').src =
+                        'https://htmlpreview.github.io/?' + base + 'academic-mockup.html';
+                }
+            }
+        }());
+    </script>
+
+    <script>
         function showTheme(choice, activeBtn) {
-            var papermod = document.getElementById('panel-papermod');
-            var academic = document.getElementById('panel-academic');
-            var area = document.getElementById('previewArea');
+            const papermod = document.getElementById('panel-papermod');
+            const academic = document.getElementById('panel-academic');
+            const area = document.getElementById('previewArea');
 
             papermod.classList.remove('visible');
             academic.classList.remove('visible');
@@ -219,7 +237,7 @@ git push</pre>
         }
 
         // Show side-by-side by default
-        var defaultBtn = document.querySelector('.theme-btn[data-theme="both"]');
+        const defaultBtn = document.querySelector('.theme-btn[data-theme="both"]');
         showTheme('both', defaultBtn);
     </script>
 </body>
