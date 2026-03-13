@@ -5,6 +5,6 @@ description = "A center dedicated to exploring the human experience through lite
 
 # Set this to your chosen theme name after previewing the mockups.
 # Options:
-#   theme = "PaperMod"    (clean, minimal blog/portfolio style)
-#   theme = "hugo-academic" (feature-rich academic/research style)
+#   theme = "PaperMod"  (clean, minimal blog/portfolio style)
+#   theme = "academic"  (feature-rich academic/research style)
 theme = "PaperMod"

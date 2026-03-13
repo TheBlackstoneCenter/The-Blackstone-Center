@@ -130,9 +130,9 @@
     </div>
 
     <div class="theme-nav">
-        <button class="theme-btn" onclick="showTheme('papermod', this)">PaperMod Theme</button>
-        <button class="theme-btn" onclick="showTheme('academic', this)">Academic Theme</button>
-        <button class="theme-btn" onclick="showTheme('both', this)">Side-by-Side</button>
+        <button class="theme-btn" data-theme="papermod" onclick="showTheme('papermod', this)">PaperMod Theme</button>
+        <button class="theme-btn" data-theme="academic" onclick="showTheme('academic', this)">Academic Theme</button>
+        <button class="theme-btn" data-theme="both" onclick="showTheme('both', this)">Side-by-Side</button>
     </div>
 
     <div class="preview-area" id="previewArea">
@@ -219,7 +219,7 @@ git push</pre>
         }
 
         // Show side-by-side by default
-        var defaultBtn = document.querySelectorAll('.theme-btn')[2];
+        var defaultBtn = document.querySelector('.theme-btn[data-theme="both"]');
         showTheme('both', defaultBtn);
     </script>
 </body>
