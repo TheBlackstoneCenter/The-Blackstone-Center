@@ -1,31 +1,27 @@
 # The William E. Blackstone Center
 
-Website source for **The Blackstone Center** — a center dedicated to exploring the human experience through literature and community engagement.
+## 👉 [Click here to see your website mockups — live, right now](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/copilot/preview-themes-for-mockup/mockups/index.html)
+
+No setup, no downloads, no accounts needed. Click the link above — it opens instantly in your browser.
+
+Here's a preview of what you'll see:
+
+[![Mockup viewer showing PaperMod and Academic themes side by side](https://github.com/user-attachments/assets/1fdb4c76-43a7-43c1-87ef-abbcff85dc41)](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/copilot/preview-themes-for-mockup/mockups/index.html)
+
+The viewer lets you toggle between the **PaperMod** theme (green/gold, clean and bold) and the **Academic** theme (dark navy, scholarly feel), or compare them side by side.
+
+> **After this PR is merged to `main`**, the permanent link will be:
+> [https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/mockups/index.html](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/main/mockups/index.html)
 
 ---
 
-## 👁️ View the Mockups Right Now
+### Want a permanent link instead?
 
-### ⚡ Instant live preview (no setup needed)
+Enable **GitHub Pages** in one step and the site will be live forever at `https://theblackstonecenter.github.io/The-Blackstone-Center/mockups/`:
 
-Click the link below — it works immediately, directly from GitHub:
-
-> **[Open Mockup Viewer — Live Preview](https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/copilot/preview-themes-for-mockup/mockups/index.html)**
->
-> `https://htmlpreview.github.io/?https://github.com/TheBlackstoneCenter/The-Blackstone-Center/blob/copilot/preview-themes-for-mockup/mockups/index.html`
-
-This uses [htmlpreview.github.io](https://htmlpreview.github.io/), a free service that renders GitHub HTML files directly in your browser.
-
-### 🌐 Permanent GitHub Pages link (one-time setup)
-
-Once you enable GitHub Pages, the mockups will live permanently at:
-
-> **<https://theblackstonecenter.github.io/The-Blackstone-Center/mockups/>**
-
-**To activate it (one click):**
-1. Go to → **[Repository Settings → Pages](https://github.com/TheBlackstoneCenter/The-Blackstone-Center/settings/pages)**
-2. Under **Source**, select **"GitHub Actions"**
-3. Save — the [Deploy workflow](https://github.com/TheBlackstoneCenter/The-Blackstone-Center/actions/workflows/pages.yml) will run automatically and publish the site
+1. Open **[Settings → Pages](https://github.com/TheBlackstoneCenter/The-Blackstone-Center/settings/pages)** for this repository
+2. Under **Source**, choose **"GitHub Actions"**
+3. Click **Save** — it deploys automatically
 
 ---
 
