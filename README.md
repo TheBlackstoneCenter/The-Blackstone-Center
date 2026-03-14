@@ -1,16 +1,6 @@
 # The William E. Blackstone Center
 
-## Fix the 404 — merge this pull request
-
-GitHub Pages is live at `https://theblackstonecenter.github.io/The-Blackstone-Center/` but shows a 404 because `main` currently has no root `index.html`. This pull request adds one.
-
-**To fix the 404:**
-
-1. Go to the **[Pull Requests tab](https://github.com/TheBlackstoneCenter/The-Blackstone-Center/pulls)**
-2. Open **[Pull Request #1 — "Add root index.html to fix GitHub Pages 404"](https://github.com/TheBlackstoneCenter/The-Blackstone-Center/pull/1)**
-3. Click **"Merge pull request"** → **"Confirm merge"**
-
-GitHub Pages will re-deploy automatically within ~60 seconds and the site will be live.
+The live site is at **<https://theblackstonecenter.github.io/The-Blackstone-Center/>**.
 
 ---
 
@@ -19,6 +9,7 @@ GitHub Pages will re-deploy automatically within ~60 seconds and the site will b
 | File / Folder | Description |
 |---|---|
 | `index.html` | Homepage — mission, vision, navigation, links to mockups and PDF |
+| `404.html` | Custom 404 error page |
 | `content/_index.md` | Hugo source content for the homepage |
 | `config.toml` | Hugo site configuration |
 | `mockups/academic-mockup.html` | Academic theme design mockup |
@@ -26,3 +17,10 @@ GitHub Pages will re-deploy automatically within ~60 seconds and the site will b
 | `mockups/index.html` | Side-by-side theme comparison page |
 | `Rood Emerita CV Winter 2026.pdf` | Uploaded CV document |
 | `.github/workflows/pages.yml` | GitHub Actions workflow — deploys site on every push to `main` |
+
+---
+
+## How the site is deployed
+
+Every push to `main` triggers the **Deploy to GitHub Pages** workflow (`.github/workflows/pages.yml`).  
+The workflow copies the repository root to the `gh-pages` branch, which GitHub Pages serves automatically.
