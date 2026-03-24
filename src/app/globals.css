@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../styles/variables.css';
+
+/* Base resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-dark-navy);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+/* Utility layer for shared component styles */
+@layer components {
+  .btn-primary {
+    @apply inline-block px-6 py-3 bg-primary-green text-white font-semibold rounded transition-colors hover:bg-primary-green/80;
+  }
+
+  .btn-secondary {
+    @apply inline-block px-6 py-3 border-2 border-primary-green text-primary-green font-semibold rounded transition-colors hover:bg-primary-green hover:text-white;
+  }
+
+  .section-heading {
+    @apply text-3xl font-serif text-dark-navy mb-4;
+  }
+
+  .container-narrow {
+    @apply max-w-4xl mx-auto px-4;
+  }
+
+  .container-wide {
+    @apply max-w-6xl mx-auto px-4;
+  }
+}
