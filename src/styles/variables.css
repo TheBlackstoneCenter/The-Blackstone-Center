@@ -1,0 +1,29 @@
+/* ============================================================
+   The Blackstone Center — CSS Custom Properties (Color Palette)
+   ============================================================ */
+
+:root {
+  /* Brand colors */
+  --color-primary-green: #4a7c59;
+  --color-primary-green-dark: #3a6347;
+  --color-primary-green-light: #5d9970;
+
+  --color-cream: #f5f1e8;
+  --color-cream-dark: #ebe5d4;
+
+  --color-white: #ffffff;
+
+  --color-dark-navy: #1a2f4a;
+  --color-dark-navy-light: #2a4a70;
+
+  --color-gold: #d4a574;
+  --color-gold-dark: #b8864e;
+
+  /* Typography */
+  --font-serif: Georgia, Cambria, 'Times New Roman', serif;
+  --font-sans: Inter, system-ui, sans-serif;
+
+  /* Spacing */
+  --max-width: 1200px;
+  --header-height: 80px;
+}
